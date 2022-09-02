@@ -42,8 +42,8 @@ public class ConferenceConfig implements WebMvcConfigurer {
         return lci;
     }
 
-    @Bean
-    public ViewResolver viewResolver() {
+    @Bean    // Normally, Spring does this code for us; We just need to enter the code from lines 48-49
+    public ViewResolver viewResolver() {    // into the application.properties file at src/main/resources
         InternalResourceViewResolver bean = new InternalResourceViewResolver();
         bean.setPrefix("/WEB-INF/jsp/");
         bean.setSuffix(".jsp");
