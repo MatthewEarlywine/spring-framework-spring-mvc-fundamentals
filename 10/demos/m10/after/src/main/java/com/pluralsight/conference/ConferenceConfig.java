@@ -42,10 +42,9 @@ public class ConferenceConfig implements WebMvcConfigurer {
         return lci;
     }
 
- // Normally, Spring does this nest bit of code for us; We just need to enter the code from lines 48-49
+ // Normally, Spring does this nest bit of code for us; We just need to enter the code from lines 51-52
  // into the application.properties file at src/main/resources.   
-    
-    
+        
     @Bean    
     public ViewResolver viewResolver() {    
         InternalResourceViewResolver bean = new InternalResourceViewResolver();
